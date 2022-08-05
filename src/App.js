@@ -8,6 +8,13 @@ import gettingout from "./images/gettingout.jpg";
 import "./App.css";
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+
   return (
     <div className="App">
       <div>
@@ -105,7 +112,7 @@ function App() {
         <div>
           <img className="get_out_img" src={gettingout} alt="#"></img>
 
-          <p>
+          <p className="get_out_text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
@@ -114,6 +121,9 @@ function App() {
 
       <div className="footer">
         <p>&copy; Buck Wild 2022. Get Buck Wild!</p>
+        <button className="scroll" onClick={scrollToTop}>
+          Back To Top
+        </button>
       </div>
     </div>
   );

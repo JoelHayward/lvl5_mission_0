@@ -170,12 +170,27 @@
   width: 300px;
 }
 
+.get_out_text {
+  display: flex;
+  width: 400px;
+  margin: 0px 20px;
+}
+
+.scroll {
+  padding: 5px 10px;
+}
+
+.scroll:hover {
+  background-color: orangered;
+}
+
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 50px;
-  margin-top: 150px;
+  margin-top: 200px;
+  background-color: lightgrey;
 }
 
 @media screen and (max-width: 850px) {
@@ -193,6 +208,12 @@
     gap: 20px;
   }
   .product_img {
-    max-height: 200px;
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .product_name {
+    gap: 20px;
   }
 }
